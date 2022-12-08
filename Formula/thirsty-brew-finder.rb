@@ -9,7 +9,7 @@ class ThirstyBrewFinder < Formula
 
     def install
     #   system "npm", "install", *Language::Node.std_npm_install_args(libexec)
-    bin.install "thirsty-brew-finder"
+    bin.install "checkInstalledApps"
     end
 
     test do
