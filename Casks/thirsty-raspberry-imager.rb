@@ -10,13 +10,8 @@
     app "Raspberry Pi Imager.app"
 
     zap trash: [
-    #   "~/Library/Application Support/com.postmanlabs.mac.ShipIt",
-    #   "~/Library/Application Support/Postman",
-    #   "~/Library/Caches/com.postmanlabs.mac.ShipIt",
-    #   "~/Library/Caches/com.postmanlabs.mac",
-    #   "~/Library/Caches/Postman",
-    #   "~/Library/Preferences/ByHost/com.postmanlabs.mac.ShipIt.*.plist",
-    #   "~/Library/Preferences/com.postmanlabs.mac.plist",
-    #   "~/Library/Saved Application State/com.postmanlabs.mac.savedState",
+      "~/Library/Caches/Raspberry Pi",
+      "~/Library/Preferences/org.raspberrypi.Imager.plist",
+      "~/Library/Saved Application State/org.raspberrypi.imagingutility.savedState",
     ]
   end
