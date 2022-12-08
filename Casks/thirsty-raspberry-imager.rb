@@ -1,6 +1,6 @@
   cask "thirsty-raspberry-imager" do
     version "1.1.1"
-    # sha256 "89be94a18c507f2cf7f8e6e627d8f2ed16dff6b236437585aa2af04ef4cc2698"
+    sha256 "f4f6d81c5103b065bffd53e316f868797369ecedd47257c1620d6efca5d3d593"
 
     url "https://downloads.raspberrypi.org/imager/imager_latest.dmg"
     name "Raspberry Imager"
