@@ -1,4 +1,4 @@
-class MyScript < Formula
+class ThirstyBrewFinder < Formula
     desc "This script finds the cask for all apps that are not installed by brew on the machine"
     homepage "https://github.com/Cur50r/homebrew-thirsty"
     url "https://github.com/Cur50r/homebrew-thirsty/Forumula/thirsty-brew-finder.tar.gz"
