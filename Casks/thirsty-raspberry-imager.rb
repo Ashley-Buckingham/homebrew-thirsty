@@ -7,7 +7,7 @@
     desc "Raspberry Pi Imager is an application to write Raspberry Pi OS images to an SD card"
     homepage "https://www.raspberrypi.com"
 
-    pkg "imager_latest.pkg"
+    app "imager_1.7.3.dmg"
 
     zap trash: [
     #   "~/Library/Application Support/com.postmanlabs.mac.ShipIt",
