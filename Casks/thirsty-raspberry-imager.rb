@@ -1,4 +1,4 @@
-  cask "raspberry-imager" do
+  cask "thirsty-raspberry-imager" do
     version "1.1.1"
     # sha256 "89be94a18c507f2cf7f8e6e627d8f2ed16dff6b236437585aa2af04ef4cc2698"
 
