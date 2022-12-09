@@ -2,8 +2,10 @@
   "name": "thirstybrewfinder",
   "version": "1.0.0",
   "description": "",
-  "main": "checkInstalledApps.js",
-  "bin": "checkInstalledApps.js",
+  "main": "cli.js",
+  "bin": {
+    "thirstybrewfinder": "cli.js"
+  },
   "pkg": {
     "targets": [
       "node14-linux-x64",
