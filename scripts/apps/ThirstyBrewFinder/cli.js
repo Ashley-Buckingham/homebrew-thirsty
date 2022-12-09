@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const child_process = require('child_process');
 
 // Get all the applications installed by brew
