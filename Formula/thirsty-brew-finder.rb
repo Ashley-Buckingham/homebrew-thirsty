@@ -1,18 +1,11 @@
 class ThirstyBrewFinder < Formula
-    version "1.0.0"
-    desc "This script finds the cask for all apps that are not installed by brew on the machine"
-    homepage "https://github.com/Cur50r/homebrew-thirsty"
-    url "https://github.com/Cur50r/homebrew-thirsty/raw/main/scripts/thirsty-brew-finder.tar.gz"
-    # sha256 "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
+  version "1.0.0"
+  desc "This script finds the cask for all apps that are not installed by brew on the machine"
+  homepage "https://github.com/Cur50r/homebrew-thirsty"
+  url "https://github.com/Cur50r/homebrew-thirsty/archive/refs/tags/0.0.1-ThirstyBrewFinder.tar.gz"
+  sha256 "b06bed6de107f29c71533731550ca979dafa87d96b12e22a65bd1a6c3ef40d98"
 
-    depends_on "node"
-
-    def install
-    #   system "npm", "install", *Language::Node.std_npm_install_args(libexec)
-    bin.install "checkInstalledApps"
-    end
-
-    test do
-      system "node", "-e", "checkInstalledApps.js"
-    end
+  def install
+    bin.install "thirstybrewfinder"
   end
+end

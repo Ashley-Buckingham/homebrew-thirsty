@@ -37,3 +37,7 @@ Once your pull request is accepted and merged, your Node.js script will be avail
 Copy code
 brew install my-script
 They can then run the script by typing its name at the command prompt (e.g. my-script).
+
+
+
+https://bharathvaj.me/blog/how-to-publish-your-nodejs-project-on-homebrew

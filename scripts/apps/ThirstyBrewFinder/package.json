@@ -1,0 +1,21 @@
+{
+  "name": "thirstybrewfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "checkInstalledApps.js",
+  "bin": "checkInstalledApps.js",
+  "pkg": {
+    "targets": [
+      "node14-linux-x64",
+      "node14-macos-x64",
+      "node14-win-x64"
+    ],
+    "outputPath": "release"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
