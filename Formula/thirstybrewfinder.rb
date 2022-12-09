@@ -6,6 +6,6 @@ class Thirstybrewfinder < Formula
   # sha256 "4383423e4e99724633398b55c66f983698b485d08873bfd1c3248aa2b19d78ee"
 
   def install
-    bin.install "getfilesize"
+    bin.install "./homebrew/thirstybrewfinder"
   end
 end
