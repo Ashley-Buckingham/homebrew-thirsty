@@ -11,14 +11,18 @@ const macAppListOutput = child_process.execSync('ls /Applications').toString();
 const macApps = macAppListOutput.split('\n').filter(app => app.trim() != '');
 
 // Find the applications that are installed on the Mac but not installed by brew
-const nonBrewApps = macApps.filter(macApp => !brewApps.includes(macApp));
+const nonBrewApps = macApps.filter(macApp => {
+  return !brewApps.includes(macApp.toLowerCase().replace('.app', '').replace(/ /g, '-'))
+});
+
 
 // For each app that is installed on the Mac but not installed by brew,
 // try to find the brew cask
 console.log('Finding all applications installed on the Mac but not installed by brew');
 nonBrewApps.forEach(nonBrewApp => {
   try {
-    const brewCaskOutput = child_process.execSync(`brew search --cask ${nonBrewApp} | grep -v warning | grep -v Error`).toString();
+    let options = {stdio : 'pipe' }; // suppresses output
+    const brewCaskOutput = child_process.execSync(`brew search --cask ${nonBrewApp} | grep -v warning | grep -v Error`, options).toString();
     const brewCask = brewCaskOutput.split('\n')[0];
     if (brewCask) {
       console.log(`\x1b[32mBrew cask for ${nonBrewApp}: ${brewCask}\x1b[0m`);
